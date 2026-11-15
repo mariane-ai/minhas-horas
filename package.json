@@ -1,0 +1,13 @@
+{
+  "name": "minhas-horas",
+  "private": true,
+  "description": "Só para os testes. O app não tem build.",
+  "scripts": {
+    "serve": "node tests/server.mjs",
+    "test": "playwright test",
+    "icons": "node tests/gerar-icones.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

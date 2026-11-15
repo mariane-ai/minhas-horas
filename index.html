@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2f6f68">
+  <meta name="description" content="Controle pessoal das horas da semana.">
+  <title>Minhas Horas</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Minhas Horas</h1>
+  </header>
+  <div id="avisos"></div>
+  <main id="tela" tabindex="-1"></main>
+  <nav class="abas" aria-label="Telas">
+    <a href="#hoje" data-aba="hoje">Hoje</a>
+    <a href="#previsao" data-aba="previsao">Previsão</a>
+    <a href="#ajustes" data-aba="ajustes">Ajustes</a>
+  </nav>
+  <dialog id="dlg"></dialog>
+  <dialog id="dlg-confirma"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
